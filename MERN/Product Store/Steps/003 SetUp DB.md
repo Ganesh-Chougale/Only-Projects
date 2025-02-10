@@ -1,3 +1,4 @@
+# Phase 3. Setup a DB in mongoose  
 ### Server.js  
 ```javascript
 app.get("/products", (req, res)=>{

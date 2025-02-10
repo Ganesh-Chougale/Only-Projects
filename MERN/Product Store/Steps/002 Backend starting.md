@@ -1,5 +1,5 @@
 inside entry point (at our case its `server.js`)  
-# 1. we need to import express, we can do this with 2 ways
+# Phase 2. we need to import express, we can do this with 2 ways
 ### 01. using `require` syntax  
 ```javascript
 const express = require('express');

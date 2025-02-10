@@ -1,3 +1,4 @@
+# Phase 4. Connect a DB to our Backend  
 `Main Dir`  
 ----->`backend`  
 ----->`backend`----->`config`  

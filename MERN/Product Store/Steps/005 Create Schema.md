@@ -1,4 +1,6 @@
+# Phase 5. Creating DB schema  
 `backend`----->`model`----->`product.model.js`  
+
 ```javascript
 import mongoose from 'mongoose';
 
