@@ -13,7 +13,7 @@ create account & create totally free cluster (may 512mb), after that you will ge
 copy the connection string  something like this:  
 `mongodb+srv://gchougale32:<db_password>@cluster0.i3awz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`
 
-no create a `.env` file in `Main Dir`  
+now create a `.env` file in `Main Dir`  
 #### Terminal:  
 ```bash
 touch .env
