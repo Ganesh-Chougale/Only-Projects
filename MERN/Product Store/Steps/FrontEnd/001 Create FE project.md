@@ -23,7 +23,12 @@ npm i @chakra-ui/react@v2.10.3 @emotion/react @emotion/styled framer-motion
 ```  
 #### Terminal:  
 ```bash
-npm i @chakra-ui/icons@v2.1.1
+npm i react-icons
+```  
+#### Terminal:  
+```bash
+# for global state
+npm i zustand
 ```  
 ### 3. grab the chakra UI snippet & inject it in out entry point js:  
 `frontend` -----> `src` -----> `main.jsx`  
