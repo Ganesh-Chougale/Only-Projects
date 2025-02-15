@@ -4,14 +4,17 @@
 #### snippet:  
 ```javascript
     // Delete Products
-    deleteProduct: async (pid)=>{
-        const res = await fetch("/api/products/${pid}", { method: "DELETE"});
-        const data = await res.json();
+    deleteProduct: async (pid) => {
+        const res = await fetch(`/api/products/${pid}`, { method: "DELETE"}); // used backticks in endpoint instead of double or single quotes 
+        const data = await res.json(); 
 
         if(!data.success) return { seccess: false, message: data.message }
 
+        // updates the UI realtime, without a page refresh:
         set(state => ({ products: state.products.filter(products => products._id !== pid) }))
+
         return { success: true, message: data.message }
+    }
 ```  
 #### Entire snippet:  
 ```javascript
@@ -140,7 +143,8 @@ const ProductCard = ({ product }) => {
 
         <HStack spacing={2}>
             <IconButton icon={<LiaEditSolid/>} colorScheme='blue' />
-            <IconButton icon={<AiOutlineDelete/>} colorScheme='red' onClick={() => handleDeleteProduct(product._id)}/>  
+            <IconButton icon={<AiOutlineDelete/>} colorScheme='red'
+            onClick={() => handleDeleteProduct(product._id)}/>  
         </HStack>
 
     </Box>
