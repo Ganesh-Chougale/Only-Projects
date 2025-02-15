@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 import Product from "../model/product.model.js";
 
-export const postProdcut = async (req, res)=>{ // removed: api/products
+export const postProduct = async (req, res)=>{ // removed: api/products
     
     const product  = req.body; // payload
 

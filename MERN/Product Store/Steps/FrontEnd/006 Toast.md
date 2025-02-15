@@ -46,6 +46,7 @@ const CreatePage = () => {
     image: ""
   });
 
+// Start
   const toast = useToast();
 
   const { createProduct } = useProductStore();
@@ -69,9 +70,8 @@ const CreatePage = () => {
     }
 
     setNewProducts({name: "", price: "", image: ""})
-    console.log("success: ", success);
-    console.log("message: ", message);
   }
+  // End
   return (
     <Container maxW={"container.sm"}>
     <VStack
